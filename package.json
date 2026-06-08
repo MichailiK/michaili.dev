@@ -1,6 +1,8 @@
 {
   "name": "michaili.dev",
+  "version": "0.0.0",
   "private": true,
+  "license": "AGPL-3.0-only",
   "scripts": {
     "format": "prettier --write \"**/*.{ts,tsx,json,md}\""
   },
