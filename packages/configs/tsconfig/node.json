@@ -1,0 +1,17 @@
+// NOTE: if you extend this config and tsc emits the following error:
+// "Cannot find type definition file for 'node'."
+// Install `@types/node` (as a dev dependency) to your project.
+{
+  "extends": "./base.json",
+
+  "compilerOptions": {
+    "module": "node20",
+    "types": ["node"],
+
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "rewriteRelativeImportExtensions": true,
+  },
+
+  "$schema": "https://json.schemastore.org/tsconfig",
+}

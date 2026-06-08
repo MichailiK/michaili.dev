@@ -1,0 +1,51 @@
+{
+  "compilerOptions": {
+    // Every JS/TS file in this repo is written as an ECMAScript module.
+    "moduleDetection": "force",
+
+    // Users of this tsconfig should set:
+    // - "module": "nodenext" for Node.js projects
+    // - "module": "esnext" (or "preserve") for bundled projects
+    // See the other tsconfigs in this directory (./node.json and ./web.json),
+    // as they change some options appropriate for their platform/use-case.
+
+    // The latest ECMAScript version is used throughout this repo
+    "target": "ES2025",
+    "lib": ["ES2025"],
+    "skipLibCheck": true, // Library checks take long & are usually not worth it
+
+    // Most projects (in this monorepo) do not need compilation to JS by the
+    // TypeScript compiler. Web projects are transpiled to JS by bundlers.
+    // Node.js can natively execute TS files (as of v22.18.0), which is being
+    // leveraged throughout the Node.js projects found in this monorepo.
+    "noEmit": true,
+
+    // No JS files are expected in this repo, but having them checked by TSC
+    // regardless is nice to have.
+    "checkJs": true,
+
+    // The `strict` option is enabled by default (as of TypeScript v6.0).
+
+    // The following enables options that are not covered by the `strict` option
+
+    // TS-exclusive constructs are not well supported across the JS ecosystem
+    // (e.g. Node.js built-in TS support, tc39 proposal-type-annotations)
+    // and can be easily substituted for (better) typed JS constructs
+    "erasableSyntaxOnly": true,
+    // It's preferable to distinguish between a property that's typed
+    // as undefined vs. a property that's optional (i.e. may not exist)
+    "exactOptionalPropertyTypes": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noPropertyAccessFromIndexSignature": true, // The dot syntax should only be used for known properties
+    "noUncheckedIndexedAccess": true,
+    "verbatimModuleSyntax": true,
+
+    // The following disables options that are covered by other tools
+
+    "noUnusedLocals": false, // Covered by ESLint (@typescript-eslint/no-unused-vars)
+    "noUnusedParameters": false, // Covered by ESLint (@typescript-eslint/no-unused-vars)
+  },
+
+  "$schema": "https://json.schemastore.org/tsconfig",
+}

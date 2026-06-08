@@ -1,0 +1,25 @@
+{
+  "name": "@ili/astro",
+  "version": "0.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "format": "prettier -w .",
+    "lint": "eslint . --max-warnings 0 --flag unstable_native_nodejs_ts_config",
+    "typecheck": "astro check"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.9",
+    "@ili/configs": "workspace:*",
+    "@types/node": "catalog:",
+    "eslint": "catalog:",
+    "eslint-plugin-astro": "^1.7.0",
+    "typescript": "catalog:"
+  },
+  "dependencies": {
+    "astro": "^6.4.4"
+  }
+}

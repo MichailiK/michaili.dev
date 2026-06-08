@@ -1,0 +1,25 @@
+{
+  "name": "@ili/configs",
+  "version": "0.0.0",
+  "type": "module",
+  "private": true,
+  "sideEffects": false,
+  "exports": {
+    "./eslint/*": "./eslint/*.ts",
+    "./tsconfig/*": "./tsconfig/*.json"
+  },
+  "scripts": {
+    "format": "prettier -w .",
+    "lint": "eslint . --max-warnings 0 --flag unstable_native_nodejs_ts_config",
+    "typecheck": "tsc"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "catalog:",
+    "eslint": "catalog:",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-perfectionist": "^5.9.0",
+    "typescript": "catalog:",
+    "typescript-eslint": "^8.60.1"
+  }
+}

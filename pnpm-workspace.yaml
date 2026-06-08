@@ -1,0 +1,12 @@
+packages:
+  - "apps/*"
+  - "packages/*"
+
+allowBuilds:
+  esbuild: true
+  sharp: true
+
+catalog:
+  "@types/node": ^25.9.2
+  "eslint": ^10.4.1
+  "typescript": ^6.0.3

@@ -1,0 +1,8 @@
+{
+  "extends": "@ili/configs/tsconfig/web",
+
+  "exclude": ["dist"],
+  "include": [".astro/**/*", "src/**/*.ts", "src/**/*.tsx", "src/**/*.astro"],
+
+  "$schema": "https://json.schemastore.org/tsconfig"
+}

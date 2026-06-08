@@ -1,0 +1,7 @@
+{
+  "extends": "@ili/configs/tsconfig/node",
+
+  "include": ["*.ts"],
+
+  "$schema": "https://json.schemastore.org/tsconfig"
+}

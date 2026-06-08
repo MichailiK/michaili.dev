@@ -1,0 +1,19 @@
+{
+  "[nix]": {
+    "editor.defaultFormatter": "jnoortheen.nix-ide"
+  },
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "editor.rulers": [80, 120],
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "eslint.options": {
+    "flags": ["unstable_native_nodejs_ts_config"]
+  },
+  "files.associations": {
+    "*.json": "jsonc"
+  },
+  "files.trimTrailingWhitespace": true,
+  "files.trimFinalNewlines": true,
+  "nix.enableLanguageServer": true,
+  "nix.serverPath": "nixd"
+}
