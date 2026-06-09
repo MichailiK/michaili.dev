@@ -10,8 +10,8 @@
 
     "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
-    "rewriteRelativeImportExtensions": true,
+    "rewriteRelativeImportExtensions": true
   },
 
-  "$schema": "https://json.schemastore.org/tsconfig",
+  "$schema": "https://json.schemastore.org/tsconfig"
 }

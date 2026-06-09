@@ -44,8 +44,8 @@
     // The following disables options that are covered by other tools
 
     "noUnusedLocals": false, // Covered by ESLint (@typescript-eslint/no-unused-vars)
-    "noUnusedParameters": false, // Covered by ESLint (@typescript-eslint/no-unused-vars)
+    "noUnusedParameters": false // Covered by ESLint (@typescript-eslint/no-unused-vars)
   },
 
-  "$schema": "https://json.schemastore.org/tsconfig",
+  "$schema": "https://json.schemastore.org/tsconfig"
 }
