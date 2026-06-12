@@ -60,6 +60,12 @@ export const CONFIG: Config[] = defineConfig([
   ...TS_ESLINT_BASE,
   eslintConfigPrettier,
   convertConfigRulesToWarns(perfectionist.configs["recommended-alphabetical"]),
+  {
+    linterOptions: {
+      reportUnusedDisableDirectives: "warn",
+      reportUnusedInlineConfigs: "warn",
+    },
+  },
 ]);
 
 export default CONFIG;
