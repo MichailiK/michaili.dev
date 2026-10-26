@@ -1,5 +1,6 @@
 .direnv/
 
+dist
 node_modules
 *.tsbuildinfo
 .astro
