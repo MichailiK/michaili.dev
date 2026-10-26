@@ -13,15 +13,15 @@
     "typecheck": "astro check --tsconfig tsconfig.web.json && tsc -p tsconfig.node.json"
   },
   "devDependencies": {
-    "@astrojs/check": "^0.9.9",
+    "@astrojs/check": "^0.9.12",
     "@ili/configs": "workspace:*",
     "@types/node": "catalog:",
     "eslint": "catalog:",
-    "eslint-plugin-astro": "^1.7.0",
+    "eslint-plugin-astro": "^3.2.1",
     "typescript": "catalog:",
     "typescript-eslint": "catalog:"
   },
   "dependencies": {
-    "astro": "^6.4.4"
+    "astro": "^7.4.2"
   }
 }

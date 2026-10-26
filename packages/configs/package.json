@@ -19,8 +19,8 @@
     "@types/node": "catalog:",
     "eslint": "catalog:",
     "eslint-config-prettier": "^10.1.8",
-    "eslint-plugin-perfectionist": "^5.9.0",
+    "eslint-plugin-perfectionist": "^5.13.0",
     "typescript": "catalog:",
-    "typescript-eslint": "^8.60.1"
+    "typescript-eslint": "catalog:"
   }
 }
