@@ -21,6 +21,7 @@
   "files.trimFinalNewlines": true,
 
   "nix.enableLanguageServer": true,
+  "nix.serverPath": "nixd",
 
   "js/ts.tsdk.path": "node_modules/typescript/lib",
   "js/ts.tsdk.promptToUseWorkspaceVersion": true
