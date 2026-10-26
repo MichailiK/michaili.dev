@@ -10,7 +10,7 @@
     "flags": ["unstable_native_nodejs_ts_config"]
   },
   "files.associations": {
-    "*.json": "jsonc"
+    "**/tsconfig/*.json": "jsonc"
   },
   "files.trimTrailingWhitespace": true,
   "files.trimFinalNewlines": true,
