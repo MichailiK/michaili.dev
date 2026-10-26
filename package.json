@@ -9,7 +9,8 @@
   },
   "devDependencies": {
     "prettier": "^3.9.10",
-    "prettier-plugin-astro": "^1.1.2"
+    "prettier-plugin-astro": "^1.1.2",
+    "typescript": "catalog:"
   },
   "engines": {
     "node": ">=26"
