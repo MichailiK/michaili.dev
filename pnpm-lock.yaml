@@ -214,6 +214,9 @@ catalogs:
     typescript:
       specifier: ^6.0.3
       version: 6.0.3
+    typescript-eslint:
+      specifier: ^8.60.1
+      version: 8.60.1
 
 importers:
 
@@ -250,6 +253,9 @@ importers:
       typescript:
         specifier: 'catalog:'
         version: 6.0.3
+      typescript-eslint:
+        specifier: 'catalog:'
+        version: 8.60.1(eslint@10.4.1)(typescript@6.0.3)
 
   packages/configs:
     devDependencies:

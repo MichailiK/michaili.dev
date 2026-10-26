@@ -1,7 +1,7 @@
 import eslint from "@eslint/js";
 import eslintConfigPrettier from "eslint-config-prettier";
 import perfectionist from "eslint-plugin-perfectionist";
-import { type Config, defineConfig } from "eslint/config";
+import { type Config, defineConfig, globalIgnores } from "eslint/config";
 import tseslint from "typescript-eslint";
 
 import { convertConfigRulesToWarns } from "./utils.ts";
@@ -58,6 +58,7 @@ export const TS_ESLINT_BASE: Config[] = defineConfig([
  * TypeScript compiler errors (with the exception of a few TS-ESLint rules.)
  */
 export const CONFIG: Config[] = defineConfig([
+  globalIgnores(["**/dist/"]), // ignore bundler/compiler emitted files
   convertConfigRulesToWarns(eslint.configs.recommended),
   ...TS_ESLINT_BASE,
   eslintConfigPrettier,

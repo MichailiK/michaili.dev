@@ -10,7 +10,7 @@
     "preview": "astro preview",
     "format": "prettier -w .",
     "lint": "eslint . --max-warnings 0 --flag unstable_native_nodejs_ts_config",
-    "typecheck": "astro check"
+    "typecheck": "astro check --tsconfig tsconfig.web.json && tsc -p tsconfig.node.json"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.9",
@@ -18,7 +18,8 @@
     "@types/node": "catalog:",
     "eslint": "catalog:",
     "eslint-plugin-astro": "^1.7.0",
-    "typescript": "catalog:"
+    "typescript": "catalog:",
+    "typescript-eslint": "catalog:"
   },
   "dependencies": {
     "astro": "^6.4.4"
