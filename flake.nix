@@ -17,7 +17,8 @@
       devShells = forAllSystems (
         pkgs:
         let
-          # keep version in sync with ./package.json & ./pnpm-workspaces.yaml
+          # keep this version in sync with ./package.json and update the
+          # @types/node package in ./pnpm-workspaces.yaml appropriately
           nodejs = pkgs.nodejs_26;
           # keep version in sync with ./package.json
           pnpm = pkgs.pnpm_11.override { inherit nodejs; };

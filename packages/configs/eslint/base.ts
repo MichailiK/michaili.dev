@@ -16,7 +16,7 @@ import { convertConfigRulesToWarns } from "./utils.ts";
  * in most cases
  */
 export const TS_ESLINT_BASE: Config[] = defineConfig([
-  // Use ts-eslint's configs, except converted to warnings
+  // Use ts-eslint's configs, converted from errors to warnings
   convertConfigRulesToWarns(...tseslint.configs.strictTypeChecked),
   convertConfigRulesToWarns(...tseslint.configs.stylisticTypeChecked),
   {
@@ -35,6 +35,8 @@ export const TS_ESLINT_BASE: Config[] = defineConfig([
           varsIgnorePattern: "^_",
         },
       ],
+      // Turn the below rules into errors, as they can show up as
+      // (user-facing) bugs.
       "@typescript-eslint/restrict-plus-operands": "error",
       "@typescript-eslint/restrict-template-expressions": "error",
     },

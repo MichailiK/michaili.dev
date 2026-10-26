@@ -4,8 +4,8 @@
     "moduleDetection": "force",
 
     // Users of this tsconfig should set:
-    // - "module": "nodenext" for Node.js projects
-    // - "module": "esnext" (or "preserve") for bundled projects
+    // - "module": "node20" for Node.js projects
+    // - "module": "es2025" (or "preserve") for bundled projects
     // See the other tsconfigs in this directory (./node.json and ./web.json),
     // as they change some options appropriate for their platform/use-case.
 

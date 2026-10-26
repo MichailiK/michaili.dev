@@ -2,7 +2,7 @@
   "extends": "./base.json",
 
   "compilerOptions": {
-    // Modern bundlers process JS/TS, and thus handle ESM & CJS imports/exports,
+    // Modern bundlers process JS/TS (and thus handle ESM & CJS imports/exports)
     // by themselves. This hints to TSC that imports/exports are handled as such
     "module": "preserve",
     "lib": ["ES2025", "DOM"]

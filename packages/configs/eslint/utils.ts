@@ -3,6 +3,7 @@ import type { Linter } from "eslint";
 /**
  * Creates a shallow copy of each provided config in {@link configs}
  * with all errors converted to warnings.
+ *
  * @param configs The configurations
  */
 export function convertConfigRulesToWarns(
