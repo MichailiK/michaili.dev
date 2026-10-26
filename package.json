@@ -4,10 +4,11 @@
   "private": true,
   "license": "AGPL-3.0-only",
   "scripts": {
-    "format": "prettier --write \"**/*.{ts,tsx,json,md}\""
+    "format": "prettier --write ."
   },
   "devDependencies": {
-    "prettier": "^3.5.3"
+    "prettier": "^3.5.3",
+    "prettier-plugin-astro": "^1.1.2"
   },
   "engines": {
     "node": ">=26"
