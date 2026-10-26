@@ -19,12 +19,20 @@ export const TS_ESLINT_BASE: Config[] = defineConfig([
   // Use ts-eslint's configs, converted from errors to warnings
   convertConfigRulesToWarns(...tseslint.configs.strictTypeChecked),
   convertConfigRulesToWarns(...tseslint.configs.stylisticTypeChecked),
+  // Turn the below rules into errors, as they can show up as
+  // (user-facing) bugs.
   {
     rules: {
       "@typescript-eslint/no-base-to-string": "error",
+      "@typescript-eslint/restrict-plus-operands": "error",
+      "@typescript-eslint/restrict-template-expressions": "error",
+    },
+  },
+  // Replicate TypeScript compiler's unused variables detection
+  {
+    rules: {
       "@typescript-eslint/no-unused-vars": [
         "warn",
-        // Replicate TypeScript compiler's unused variables detection
         {
           args: "all",
           argsIgnorePattern: "^_",
@@ -35,10 +43,6 @@ export const TS_ESLINT_BASE: Config[] = defineConfig([
           varsIgnorePattern: "^_",
         },
       ],
-      // Turn the below rules into errors, as they can show up as
-      // (user-facing) bugs.
-      "@typescript-eslint/restrict-plus-operands": "error",
-      "@typescript-eslint/restrict-template-expressions": "error",
     },
   },
   // Tell TS-ESLint to use TypeScript APIs
@@ -60,7 +64,7 @@ export const TS_ESLINT_BASE: Config[] = defineConfig([
 export const CONFIG: Config[] = defineConfig([
   globalIgnores(["**/dist/"]), // ignore bundler/compiler emitted files
   convertConfigRulesToWarns(eslint.configs.recommended),
-  ...TS_ESLINT_BASE,
+  TS_ESLINT_BASE,
   eslintConfigPrettier,
   convertConfigRulesToWarns(perfectionist.configs["recommended-alphabetical"]),
   {
