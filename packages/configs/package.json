@@ -14,13 +14,15 @@
     "lint": "eslint . --max-warnings 0 --flag unstable_native_nodejs_ts_config",
     "typecheck": "tsc"
   },
-  "devDependencies": {
+  "dependencies": {
     "@eslint/js": "^10.0.1",
-    "@types/node": "catalog:",
     "eslint": "catalog:",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-perfectionist": "^5.13.0",
-    "typescript": "catalog:",
     "typescript-eslint": "catalog:"
+  },
+  "devDependencies": {
+    "@types/node": "catalog:",
+    "typescript": "catalog:"
   }
 }
