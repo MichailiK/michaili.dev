@@ -7,9 +7,10 @@ export default defineConfig([
   globalIgnores([".astro/"]),
   BASE_CONFIG,
   eslintPluginAstro.configs.recommended,
-  // TypeScript's ProjectService cant parse astro files, so the legacy `project`
-  // option gets used to make TS-ESLint build the project with the help of
-  // astro-eslint-parser
+  // TypeScript's ProjectService can't parse astro files, so the legacy
+  // `project` option gets used to make TS-ESLint build the project with
+  // the help of astro-eslint-parser.
+  // https://github.com/ota-meshi/eslint-plugin-astro/issues/447
   {
     files: ["**/*.astro"],
     languageOptions: {
@@ -20,5 +21,10 @@ export default defineConfig([
         projectService: false,
       },
     },
+  },
+  // https://github.com/ota-meshi/eslint-plugin-astro/issues/402
+  {
+    extends: [tseslint.configs.disableTypeChecked],
+    files: ["**/*.astro/*.{ts,js}"],
   },
 ]);
