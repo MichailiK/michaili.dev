@@ -18,6 +18,8 @@
     "@types/node": "catalog:",
     "eslint": "catalog:",
     "eslint-plugin-astro": "^3.2.1",
+    "prettier": "catalog:",
+    "prettier-plugin-astro": "catalog:",
     "typescript": "catalog:",
     "typescript-eslint": "catalog:"
   },
