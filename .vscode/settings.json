@@ -1,19 +1,27 @@
 {
-  "[nix]": {
-    "editor.defaultFormatter": "jnoortheen.nix-ide"
-  },
+  "[astro]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[nix]": { "editor.defaultFormatter": "jnoortheen.nix-ide" },
+
+  "editor.codeActionsOnSave": { "source.fixAll.eslint": "explicit" },
   "editor.formatOnSave": true,
+
   "editor.tabSize": 2,
   "editor.rulers": [80, 120],
+
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "eslint.options": {
-    "flags": ["unstable_native_nodejs_ts_config"]
-  },
+
+  "eslint.options": { "flags": ["unstable_native_nodejs_ts_config"] },
+  "eslint.workingDirectories": [{ "mode": "auto" }],
+
   "files.associations": {
     "**/tsconfig/*.json": "jsonc"
   },
+
   "files.trimTrailingWhitespace": true,
   "files.trimFinalNewlines": true,
+
   "nix.enableLanguageServer": true,
-  "nix.serverPath": "nixd"
+
+  "js/ts.tsdk.path": "node_modules/typescript/lib",
+  "js/ts.tsdk.promptToUseWorkspaceVersion": true
 }
