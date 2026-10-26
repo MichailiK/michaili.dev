@@ -211,6 +211,12 @@ catalogs:
     eslint:
       specifier: ^10.13.0
       version: 10.13.0
+    prettier:
+      specifier: ^3.9.10
+      version: 3.9.10
+    prettier-plugin-astro:
+      specifier: ^1.1.2
+      version: 1.1.2
     typescript:
       specifier: ^6.0.3
       version: 6.0.3
@@ -253,6 +259,12 @@ importers:
       eslint-plugin-astro:
         specifier: ^3.2.1
         version: 3.2.1(@typescript-eslint/parser@8.72.0(eslint@10.13.0)(typescript@6.0.3))(eslint@10.13.0)(typescript-eslint@8.72.0(eslint@10.13.0)(typescript@6.0.3))
+      prettier:
+        specifier: 'catalog:'
+        version: 3.9.10
+      prettier-plugin-astro:
+        specifier: 'catalog:'
+        version: 1.1.2(prettier@3.9.10)
       typescript:
         specifier: 'catalog:'
         version: 6.0.3
@@ -261,13 +273,10 @@ importers:
         version: 8.72.0(eslint@10.13.0)(typescript@6.0.3)
 
   packages/configs:
-    devDependencies:
+    dependencies:
       '@eslint/js':
         specifier: ^10.0.1
         version: 10.0.1(eslint@10.13.0)
-      '@types/node':
-        specifier: 'catalog:'
-        version: 26.6.5
       eslint:
         specifier: 'catalog:'
         version: 10.13.0
@@ -277,12 +286,16 @@ importers:
       eslint-plugin-perfectionist:
         specifier: ^5.13.0
         version: 5.13.0(eslint@10.13.0)(typescript@6.0.3)
-      typescript:
-        specifier: 'catalog:'
-        version: 6.0.3
       typescript-eslint:
         specifier: 'catalog:'
         version: 8.72.0(eslint@10.13.0)(typescript@6.0.3)
+    devDependencies:
+      '@types/node':
+        specifier: 'catalog:'
+        version: 26.6.5
+      typescript:
+        specifier: 'catalog:'
+        version: 6.0.3
 
 packages:
 
