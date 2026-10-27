@@ -3,8 +3,8 @@
   "name": "michaili.dev",
   "version": "0.0.0",
   "private": true,
-  "type": "module",
   "license": "AGPL-3.0-only",
+  "type": "module",
   "scripts": {
     "format": "prettier --write ."
   },
@@ -24,8 +24,8 @@
     },
     "packageManager": {
       "name": "pnpm",
-      "onFail": "error",
-      "version": ">=11"
+      "version": ">=11",
+      "onFail": "error"
     }
   }
 }

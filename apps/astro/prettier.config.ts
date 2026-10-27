@@ -8,7 +8,7 @@ export default mergeConfigs(BASE, {
   overrides: [{ files: "*.astro", options: { parser: "astro" } }],
 
   plugins: [
-    // the type of this plugin doesnt quite match what Prettier expects
+    // the type of this plugin doesn't quite match what Prettier expects
     prettierPluginAstro as Plugin,
   ],
 });

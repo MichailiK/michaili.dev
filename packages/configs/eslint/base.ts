@@ -46,13 +46,7 @@ export const TS_ESLINT_BASE: Config[] = defineConfig([
     },
   },
   // Tell TS-ESLint to use TypeScript APIs
-  {
-    languageOptions: {
-      parserOptions: {
-        projectService: true,
-      },
-    },
-  },
+  { languageOptions: { parserOptions: { projectService: true } } },
 ]);
 
 /**

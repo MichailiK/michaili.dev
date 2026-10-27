@@ -2,10 +2,10 @@
   "$schema": "https://json.schemastore.org/package",
   "name": "@ili/configs",
   "version": "0.0.0",
-  "license": "AGPL-3.0-only",
-  "type": "module",
   "private": true,
+  "license": "AGPL-3.0-only",
   "sideEffects": false,
+  "type": "module",
   "exports": {
     "./eslint/*": "./eslint/*.ts",
     "./prettier/*": "./prettier/*.ts",
@@ -24,11 +24,11 @@
     "prettier-plugin-packagejson": "^3.0.3",
     "typescript-eslint": "catalog:"
   },
-  "peerDependencies": {
-    "prettier": "catalog:"
-  },
   "devDependencies": {
     "@types/node": "catalog:",
     "typescript": "catalog:"
+  },
+  "peerDependencies": {
+    "prettier": "catalog:"
   }
 }

@@ -2,16 +2,19 @@
   "$schema": "https://json.schemastore.org/package",
   "name": "@ili/astro",
   "version": "0.0.0",
+  "private": true,
   "license": "AGPL-3.0-only",
   "type": "module",
-  "private": true,
   "scripts": {
-    "dev": "astro dev",
     "build": "astro build",
-    "preview": "astro preview",
+    "dev": "astro dev",
     "format": "prettier -w .",
     "lint": "eslint . --max-warnings 0 --flag unstable_native_nodejs_ts_config",
+    "preview": "astro preview",
     "typecheck": "astro check --tsconfig tsconfig.web.json && tsc -p tsconfig.node.json"
+  },
+  "dependencies": {
+    "astro": "^7.4.2"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.12",
@@ -23,8 +26,5 @@
     "prettier-plugin-astro": "^1.1.2",
     "typescript": "catalog:",
     "typescript-eslint": "catalog:"
-  },
-  "dependencies": {
-    "astro": "^7.4.2"
   }
 }
