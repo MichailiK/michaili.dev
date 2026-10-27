@@ -19,7 +19,7 @@
     "eslint": "catalog:",
     "eslint-plugin-astro": "^3.2.1",
     "prettier": "catalog:",
-    "prettier-plugin-astro": "catalog:",
+    "prettier-plugin-astro": "^1.1.2",
     "typescript": "catalog:",
     "typescript-eslint": "catalog:"
   },
