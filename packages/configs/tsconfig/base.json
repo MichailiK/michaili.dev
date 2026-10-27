@@ -47,5 +47,5 @@
     "noUnusedParameters": false // Covered by ESLint (@typescript-eslint/no-unused-vars)
   },
 
-  "$schema": "https://json.schemastore.org/tsconfig"
+  "$schema": "https://www.schemastore.org/tsconfig.json"
 }

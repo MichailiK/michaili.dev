@@ -8,5 +8,5 @@
     "lib": ["ES2025", "DOM"]
   },
 
-  "$schema": "https://json.schemastore.org/tsconfig"
+  "$schema": "https://www.schemastore.org/tsconfig.json"
 }

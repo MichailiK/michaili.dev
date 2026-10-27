@@ -4,5 +4,5 @@
   "exclude": ["dist"],
   "include": [".astro/**/*", "src/**/*.ts", "src/**/*.tsx", "src/**/*.astro"],
 
-  "$schema": "https://json.schemastore.org/tsconfig"
+  "$schema": "https://www.schemastore.org/tsconfig.json"
 }
