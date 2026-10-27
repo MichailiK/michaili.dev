@@ -10,7 +10,8 @@ import { convertConfigRulesToWarns } from "./utils.ts";
  * The base typescript-eslint config.
  *
  * Most rules in this config are converted to warnings to emphasize
- * TypeScript compiler errors (with the exception of a few TS-ESLint rules.)
+ * TypeScript compiler errors (with the exception of a few TS-ESLint rules that
+ * can catch user-facing mistakes.)
  *
  * Note that the default export of this module, {@link CONFIG}, should be used
  * in most cases
@@ -19,8 +20,7 @@ export const TS_ESLINT_BASE: Config[] = defineConfig([
   // Use ts-eslint's configs, converted from errors to warnings
   convertConfigRulesToWarns(...tseslint.configs.strictTypeChecked),
   convertConfigRulesToWarns(...tseslint.configs.stylisticTypeChecked),
-  // Turn the below rules into errors, as they can show up as
-  // (user-facing) bugs.
+  // Turn rules that can catch user-facing bugs into errors
   {
     rules: {
       "@typescript-eslint/no-base-to-string": "error",
@@ -59,7 +59,8 @@ export const TS_ESLINT_BASE: Config[] = defineConfig([
  * The base ESLint config to be used across the monorepo.
  *
  * Most rules in this config are converted to warnings to emphasize
- * TypeScript compiler errors (with the exception of a few TS-ESLint rules.)
+ * TypeScript compiler errors (with the exception of a few TS-ESLint rules that
+ * can catch user-facing mistakes.)
  */
 export const CONFIG: Config[] = defineConfig([
   globalIgnores(["**/dist/"]), // ignore bundler/compiler emitted files
