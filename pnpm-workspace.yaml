@@ -1,3 +1,4 @@
+# yaml-language-server: $schema=https://www.schemastore.org/pnpm-workspace.json
 packages:
   - "apps/*"
   - "packages/*"
@@ -12,5 +13,3 @@ catalog:
   typescript: ^6.0.3
   typescript-eslint: ^8.72.0
   prettier: ^3.9.10
-
-# yaml-language-server: $schema=https://www.schemastore.org/pnpm-workspace.json
