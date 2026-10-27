@@ -1,10 +1,11 @@
 {
   "recommendations": [
-    "mkhl.direnv",
-    "jnoortheen.nix-ide",
-    "EditorConfig.EditorConfig",
+    "astro-build.astro-vscode",
     "dbaeumer.vscode-eslint",
+    "EditorConfig.EditorConfig",
     "esbenp.prettier-vscode",
-    "astro-build.astro-vscode"
+    "jnoortheen.nix-ide",
+    "mkhl.direnv",
+    "redhat.vscode-yaml"
   ]
 }
