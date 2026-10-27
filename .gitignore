@@ -3,6 +3,5 @@
 dist
 node_modules
 *.tsbuildinfo
-.astro
 
 .DS_Store
